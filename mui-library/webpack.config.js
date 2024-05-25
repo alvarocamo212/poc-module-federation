@@ -41,10 +41,12 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "tailwind_library",
+      name: "extComponents",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        '.': './src/components/index.ts'
+      },
       shared: {
         ...deps,
         react: {

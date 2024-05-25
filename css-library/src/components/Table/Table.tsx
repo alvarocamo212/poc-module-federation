@@ -17,9 +17,11 @@ export const Table: FC<TableProps> = ({ title, rows = [] }) => {
 
             <table>
                 <thead>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Correo</th>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                    </tr>
                 </thead>
                 <tbody>
                     {rows.map(row => (

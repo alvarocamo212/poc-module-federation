@@ -2,13 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.scss'
+import { Header, Table } from './components'
 
 const App = () => (
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <div>Name: tailwind-library</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Tailwind</div>
+    <Header title='Title' />
+    <Table title='' rows={[]} />
   </div>
 )
 const rootElement = document.getElementById('app')
